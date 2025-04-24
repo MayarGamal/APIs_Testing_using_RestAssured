@@ -26,6 +26,28 @@ Validation of HTTP responses, headers
 
 Clear and maintainable test structure
 
+#project structure
+
+APIsTask/
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── org.example/
+│   │           └── Main.java          # Entry point (if needed)
+│   └── test/
+│       └── java/
+│           ├── DeleteAPITest.java     # Test for DELETE method
+│           ├── GETAPITests.java       # Test for GET requests
+│           ├── GetToken.java          # Auth/token logic
+│           ├── PatchAPITest.java      # Test for PATCH method
+│           └── POSTAPITests.java      # Test for POST requests
+│       └── testng.xml                 # TestNG configuration
+├── pom.xml                            # Maven project file
+├── README.md                          # Project documentation
+├── .gitignore                         # Specifies files to be ignored by Git
+└── APIsTask.iml                       # IntelliJ IDEA project file
+
+
 #Test Scenarios Covered
 
 1-Get Status
